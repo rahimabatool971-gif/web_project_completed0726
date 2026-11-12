@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugar & Crumb - Menu & Cart</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Sugar & Crumb 🧁</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="media.html">Media</a>
+            <a href="menu.html" class="active">Menu</a>
+            <a href="custom-cake.html">Custom Cake</a>
+            <a href="contact.html">Contact</a>
+            <a href="register.html">Register</a>
+        </nav>
+    </header>
+    <main class="menu-container">
+        <h1>Our Delicious Menu</h1>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search for cakes, pastries...">
+        </div>
+        <div class="shop-layout">
+            <div class="products-grid" id="productsGrid"></div>
+            <div class="cart-section">
+                <h2>Your Cart 🛒</h2>
+                <ul id="cartItems"><p class="empty-cart">Your cart is empty.</p></ul>
+                <div class="cart-total">
+                    <h3>Total: $<span id="totalPrice">0.00</span></h3>
+                    <button id="checkoutBtn" onclick="checkout()">Proceed to Checkout</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="menu.js"></script>
+</body>
+</html>

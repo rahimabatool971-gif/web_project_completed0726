@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugar & Crumb - Custom Cake</title>
+    <link rel="stylesheet" href="custom-cake.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Sugar & Crumb 🧁</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="media.html">Media</a>
+            <a href="menu.html">Menu</a>
+            <a href="custom-cake.html" class="active">Custom Cake</a>
+            <a href="contact.html">Contact</a>
+            <a href="register.html">Register</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Design Your Dream Cake 🎂</h1>
+        <div class="builder-box">
+            <div class="options-pane">
+                <label>Size:</label>
+                <select id="cakeSize">
+                    <option value="10">1 Pound ($10)</option>
+                    <option value="18">2 Pounds ($18)</option>
+                </select>
+
+                <label>Flavor:</label>
+                <select id="cakeFlavor">
+                    <option value="0">Chocolate</option>
+                    <option value="3">Red Velvet (+$3)</option>
+                </select>
+
+                <label>Message:</label>
+                <input type="text" id="cakeMessage" placeholder="Happy Birthday!">
+            </div>
+
+            <div class="preview-pane">
+                <h3>Summary</h3>
+                <p>Size: <span id="summarySize">1 Pound</span></p>
+                <p>Flavor: <span id="summaryFlavor">Chocolate</span></p>
+                <h2>Total: $<span id="totalPrice">10.00</span></h2>
+                <button onclick="orderCake()">Place Order</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="custom-cake.js"></script>
+</body>
+</html>

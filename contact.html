@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugar & Crumb - Contact</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Sugar & Crumb 🧁</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="media.html">Media</a>
+            <a href="menu.html">Menu</a>
+            <a href="custom-cake.html">Custom Cake</a>
+            <a href="contact.html" class="active">Contact</a>
+            <a href="register.html">Register</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Contact Us & Reviews 💬</h1>
+        <div class="contact-grid">
+            <div class="card">
+                <h2>Leave a Review</h2>
+                <form id="reviewForm">
+                    <input type="text" id="reviewerName" placeholder="Your Name" required>
+                    <textarea id="reviewText" placeholder="Your Review..." required></textarea>
+                    <button type="submit">Submit Review</button>
+                </form>
+                <h3>Recent Reviews</h3>
+                <div id="reviewsList" class="reviews-list">
+                    <p class="review-item"><strong>Amaan:</strong> Great bakery products!</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="contact.js"></script>
+</body>
+</html>
